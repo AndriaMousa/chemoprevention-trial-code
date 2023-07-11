@@ -12,13 +12,13 @@ Andria Mousa, Gina Cuomo-Dannenburg, Hayley A. Thompson, R. Matthew Chico, Khali
 - [deterministic model](./deterministic%20model): this folder contains the deterministic model files for the one- and two-strain models, with or without a control group (stan files) 
 - [functions](./functions): contains functions required for the analyses presented in the paper. These include the simulation functions, post-processing calculation functions, and functions that plot 1) the simulations and deterministic values, 2)the protective  efficacy over time in the genotype model, 3) the mean duration of protection, and 4) the distribution of the lower 95% credible interval and power. 
 - [processing](./processing): This folder contains scripts to process the stan outputs and calculate the 30-day protective efficacy and mean duration of protection for one- and two-strain models. Additionally it includes the post-processing to calculate the width of CrIs distribution for each scenario (precision).
-- model_fitting_Xstrain_X_control files: these are the files used to fit the stan model to the simulated data. There are separate files for one- and two-strain models and for scenarios with or without a control group
-- simulation_examples: this file contains examples of simulating data using the simulation functions
+- **model_fitting_Xstrain_X_control files**: these are the files used to fit the stan model to the simulated data. There are separate files for one- and two-strain models and for scenarios with or without a control group
+- **simulation_examples**: this file contains examples of simulating data using the simulation functions
 
 ### **Important note**: 
 Two folders are provided with the publication which are absent from the repo due to file size restrictions. These are needed to run some of the analyses in the repo, and both folders should be stored in the same directory as the files above. 
-- [stan_output](./stan_output): Containing .rds outputs from model fitting (undertaken using a Bayesian framework implemented using rStan). Within this folder there are subfolders reflecting different trial scenarios. Within each scenario folder there are 1000 .rds objects, each containing the posterior distribution of parameters for that simulation.
-- [saved_dfs](./saved_dfs): Contains the full posterior distribution from each simulation 
+- **stan_output**: Containing .rds outputs from model fitting (undertaken using a Bayesian framework implemented using rStan). Within this folder there are subfolders reflecting different trial scenarios. Within each scenario folder there are 1000 .rds objects, each containing the posterior distribution of parameters for that simulation.
+- **saved_dfs**: Contains the full posterior distribution from each simulation 
  
 ## Software Requirements
 Running the code contained in this repository requires the following:
