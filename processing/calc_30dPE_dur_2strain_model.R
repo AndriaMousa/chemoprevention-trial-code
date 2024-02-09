@@ -1,7 +1,7 @@
 
 source("functions/calc_30dPE_dur_2strain_model_function.R")
 
-###   this script calculated 30-day Protective efficacy and mean duration of protection for each parameter value in the posterior distribution
+###   this script calculates 30-day Protective efficacy and mean duration of protection for each parameter value in the posterior distribution
 ###   it then saves these 3 dataframes for each scenario in the folder "saved_dfs":
 
 ##    1) imputed posterior distributions of 30dPE and mean dur across all simulations (1000sims x 10000 iterations per scenario) 
