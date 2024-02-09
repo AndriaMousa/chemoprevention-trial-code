@@ -2,7 +2,7 @@
 :mosquito:🦟:test_tube:🧪:dna: 🧬
  
 ## Overview
-This repository contains the code used to simulate and analyse chemoprevention trial scenarios, related to study design, and participant and setting characteristics. There are two types of models: a single-strain model that can be used to estimate the overall protective efficacy of chemoprevention, and  two-model that can be used to estimate genotype-differences in protective efficacy. 
+This repository contains the code used to simulate and analyse chemoprevention trial scenarios, related to study design, and participant and setting characteristics. There are two types of models: a single-strain model that can be used to estimate the overall protective efficacy of chemoprevention, and  two-strain model that can be used to estimate genotype-differences in protective efficacy. 
 The corresponding scientific article is available at:
 Andria Mousa, Gina Cuomo-Dannenburg, Hayley A. Thompson, R. Matthew Chico, Khalid Beshir, Colin J. Sutherland, David Schellenberg, Roly Gosling, Michael Alifrangis, Emma Filtenborg Hocke, Helle S. Hansson, Ana Chopo-Pizarro, Wilfred F. Mbacham, Innocent M. Ali, Mike Chaponda, Cally Roper, and Lucy C. Okell . Available at: ADD REFERENCE LINK HERE
  
