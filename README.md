@@ -2,21 +2,21 @@
 :mosquito:🦟:test_tube:🧪:dna: 🧬
  
 ## Overview
-This repository contains the code used to simulate and analyse chemoprevention trial scenarios, related to study design, and participant and setting characteristics. There are two types of models: a single-strain model that can be used to estimate the overall protective efficacy of chemoprevention, and  two-strain model that can be used to estimate genotype-differences in protective efficacy. 
+This repository contains the code used to simulate and analyse chemoprevention trial scenarios, related to study design, and participant and setting characteristics. There are two types of models: a single-strain model that can be used to estimate the overall protective efficacy of chemoprevention, and a two-strain model that can be used to estimate genotype-differences in protective efficacy. 
 The corresponding scientific article is available at:
 Andria Mousa, Gina Cuomo-Dannenburg, Hayley A. Thompson, R. Matthew Chico, Khalid Beshir, Colin J. Sutherland, David Schellenberg, Roly Gosling, Michael Alifrangis, Emma Filtenborg Hocke, Helle S. Hansson, Ana Chopo-Pizarro, Wilfred F. Mbacham, Innocent M. Ali, Mike Chaponda, Cally Roper, and Lucy C. Okell . Available at: ADD REFERENCE LINK HERE
  
 ## Repo Contents
-- [additional supplementary materials](./additional%20supplementary%20materials): this folder includes the code to produce all supplementary plots and materials, including a three-strain model extension, and an alternative approach of calculating power using Cox proportional hazards.
+- [additional supplementary materials](./additional%20supplementary%20materials): this folder includes the code to produce all supplementary plots and materials, including a three-strain model extension, inclusion of mixed infections, and an alternative approach of calculating power using Cox proportional hazards.
 - [code to generate figures](./code%20to%20generate%20figures): this folder contains code related to figures presented in the main manuscript
 - [deterministic model](./deterministic%20model): this folder contains the deterministic model files for the one- and two-strain models, with or without a control group (stan files) 
-- [functions](./functions): contains functions required for the analyses presented in the paper. These include the simulation functions, post-processing calculation functions, and functions that plot 1) the simulations and deterministic values, 2)the protective  efficacy over time in the genotype model, 3) the mean duration of protection, and 4) the distribution of the lower 95% credible interval and power. 
+- [functions](./functions): contains functions required for the analyses presented in the paper. These include the simulation functions, post-processing calculation functions, and functions that plot 1) the simulations and deterministic values, 2)the protective  efficacy over time since drug dose, 3) the mean duration of protection, and 4) the distribution of the lower 95% credible interval and power. 
 - [processing](./processing): This folder contains scripts to process the stan outputs and calculate the 30-day protective efficacy and mean duration of protection for one- and two-strain models. Additionally it includes the post-processing to calculate the width of CrIs distribution for each scenario (precision).
 - **model_fitting_Xstrain_X_control files**: these are the files used to fit the stan model to the simulated data. There are separate files for one- and two-strain models and for scenarios with or without a control group
 - **simulation_examples**: this file contains examples of simulating data using the simulation functions
 
 ### **Important note**: 
-Two folders are provided with the publication which are absent from the repo due to file size restrictions. These are needed to run some of the analyses in the repo, and both folders should be stored in the same directory as the files above. 
+Two folders are absent from the repo due to file size restrictions and can be made available by the corresponding author. These are needed to run some of the analyses in the repo, and both folders should be stored in the same directory as the files above. 
 - **stan_output**: Containing .rds outputs from model fitting (undertaken using a Bayesian framework implemented using rStan). Within this folder there are subfolders reflecting different trial scenarios. Within each scenario folder there are 1000 .rds objects, each containing the posterior distribution of parameters for that simulation.
 - **saved_dfs**: Contains the full posterior distribution from each simulation 
  
